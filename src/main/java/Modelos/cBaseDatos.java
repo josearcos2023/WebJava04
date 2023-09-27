@@ -8,6 +8,7 @@ public class cBaseDatos {
     String usuario = "root";
     String clave   = "12345678";
 
+
     private Connection Conectar() {
         try {
             Class.forName(driver);
