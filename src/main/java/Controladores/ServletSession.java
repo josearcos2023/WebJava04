@@ -13,6 +13,7 @@ public class ServletSession extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try {
+
             HttpSession misession= (HttpSession) request.getSession();
             misession.removeAttribute("usuario");
             misession.invalidate();
