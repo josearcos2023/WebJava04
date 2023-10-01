@@ -23,9 +23,9 @@
 
 <%
   String driver = "com.mysql.cj.jdbc.Driver";
-  String url   = "jdbc:mysql://localhost:3306/test";
+  String url   = "jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC";
   String user   = "root";
-  String pass   = "admin";
+  String pass   = "david2023";
 
   Class.forName(driver);
   Connection xcon = DriverManager.getConnection(url, user, pass);
@@ -44,6 +44,8 @@
 </head>
 <body>
 <div class="container">
+  <h3>Usuario Logeado: <b><% out.print(usuario); %></b></h3>
+  <h3><a class='btn btn-danger' href="/WebJava04_war_exploded/servlet-session">Cerrar Sesion</a></h3>
   <h1>Listado de Areas</h1>
   <table class="table table-striped">
     <thead>
@@ -65,6 +67,11 @@
     %>
     </tbody>
   </table>
+</div>
+<div>
+  <button class="btn btn-primary" type="button" onclick="window.location.href = 'cargos.jsp'">
+    Cargos
+  </button>
 </div>
 </body>
 

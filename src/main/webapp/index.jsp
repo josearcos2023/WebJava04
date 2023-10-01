@@ -15,6 +15,7 @@
             <div>
                 <a href="areas.jsp">Áreas</a><br>
                 <a href="login.jsp">Login</a><br>
+                <a href="cargos.jsp">Cargos</a><br>
             </div>
 
     </div>

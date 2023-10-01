@@ -6,8 +6,7 @@ public class cBaseDatos {
     String driver  = "com.mysql.cj.jdbc.Driver";
     String url="jdbc:mysql://localhost:3306/test?useSSL=false&serverTimezone=UTC";
     String usuario = "root";
-    String clave   = "12345678";
-
+    String clave   = "david2023";
 
     private Connection Conectar() {
         try {
